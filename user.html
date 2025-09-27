@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANISH-DASHBOARD</title>
+    <!-- link css files  -->
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/rte_theme_default.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header>
+      <div class="flex">
+        <div class="fas fa-bars" id="menu"></div>
+        <a href="" class="logo">
+          <img src="images/logo2.png" alt="" />
+        </a>
+      </div>
+
+      <div class="box-container">
+        <div class="fas fa-moon" id="theme"></div>
+        <div class="fas fa-bell" id="bell"></div>
+        <div class="fas fa-envelope" id="mail"></div>
+        <div class="fas fa-user" id="user"></div>
+      </div>
+    </header>
+    <!-- sidebar  -->
+    <div class="sidebar">
+      <div class="container">
+        <a href="dashbard.html" class="active">
+          <i class="fas fa-home"></i>
+          <span> Dashboard</span>
+        </a>
+        <a href="category.html">
+          <i class="fas fa-list"></i>
+          <span>category</span>
+        </a>
+
+        <a href="project.html">
+          <i class="fas fa-project-diagram"></i>
+          <span>projects</span>
+        </a>
+        <a href="skill.html">
+          <i class="fas fa-code"></i>
+          <span>skills</span>
+        </a>
+        <a href="user.html">
+          <i class="fas fa-users"></i>
+          <span>users</span>
+        </a>
+        <a href="register.html">
+          <i class="fas fa-address-card"></i>
+          <span>registration</span>
+        </a>
+        <a href="contact.html">
+          <i class="fas fa-phone"></i>
+          <span>contact</span>
+        </a>
+        <a href="education.html">
+          <i class="fas fa-graduation-cap"></i>
+          <span>education</span>
+        </a>
+        <a href="experience.html">
+          <i class="fas fa-signal"></i>
+          <span>experience</span>
+        </a>
+        <a href="setting.html">
+          <i class="fas fa-cog"></i>
+          <span>setting</span>
+        </a>
+        <a href="logout.html">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>logout</span>
+        </a>
+      </div>
+    </div>
+    <!-- main container  -->
+    <section class="dashboard">
+      <div class="overlay"></div>
+      <!-- title and boxes  -->
+
+      <div class="table">
+        <div class="table-header">
+          <p class="heading">Admin | User Data</p>
+          <div class="">
+            <input type="search" placeholder="search here" class="search" />
+            <a href="add-user.html" class="btn"
+              ><i class="fas fa-add"></i> Add New</a
+            >
+          </div>
+        </div>
+        <div class="table-content">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 50px"><input type="checkbox" /></th>
+                <th style="width: 50px">S.no</th>
+                <th>name</th>
+                <th>Role</th>
+                <th>Email</th>
+                <th>password</th>
+                <th>phone</th>
+                <th style="width: 100px">Date</th>
+
+                <th>options</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" name="" id="" /></td>
+                <td>1</td>
+                <td>watch</td>
+                <td>admin</td>
+                <td class="email">xyz@gmail.com</td>
+                <td>xyzvvvc@om</td>
+                <td>1234567890</td>
+                <td>12/12/24</td>
+                <td>
+                  <a href="" class="action-btn edit">
+                    <i class="fas fa-pen"></i>
+                  </a>
+                  <a href="" class="action-btn delete">
+                    <i class="fas fa-trash"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- pagination  -->
+        <div class="pagination">
+          <div class="page">show 1 to 10 of 25</div>
+          <div class="num">
+            <a href=""><</a>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- link js files  -->
+    <script src="js/jquery.js"></script>
+    <script src="js/chart.js"></script>
+
+    <script type="text/javascript" src="js/rte.js"></script>
+    <script type="text/javascript" src="js/all_plugins.js"></script>
+
+    <script src="js/script.js"></script>
+    <script>
+      // var editor1 = new RichTextEditor("#div_editor1");
+    </script>
+  </body>
+</html>

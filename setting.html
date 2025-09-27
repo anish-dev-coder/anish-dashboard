@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANISH-DASHBOARD</title>
+    <!-- link css files  -->
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/rte_theme_default.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header>
+      <div class="flex">
+        <div class="fas fa-bars" id="menu"></div>
+        <a href="" class="logo">
+          <img src="images/logo2.png" alt="" />
+        </a>
+      </div>
+
+      <div class="box-container">
+        <div class="fas fa-moon" id="theme"></div>
+        <div class="fas fa-bell" id="bell"></div>
+        <div class="fas fa-envelope" id="mail"></div>
+        <div class="fas fa-user" id="user"></div>
+      </div>
+    </header>
+    <!-- sidebar  -->
+    <div class="sidebar">
+      <div class="container">
+        <a href="dashbard.html" class="active">
+          <i class="fas fa-home"></i>
+          <span> Dashboard</span>
+        </a>
+        <a href="category.html">
+          <i class="fas fa-list"></i>
+          <span>category</span>
+        </a>
+
+        <a href="project.html">
+          <i class="fas fa-project-diagram"></i>
+          <span>projects</span>
+        </a>
+        <a href="skill.html">
+          <i class="fas fa-code"></i>
+          <span>skills</span>
+        </a>
+        <a href="user.html">
+          <i class="fas fa-users"></i>
+          <span>users</span>
+        </a>
+        <a href="register.html">
+          <i class="fas fa-address-card"></i>
+          <span>registration</span>
+        </a>
+        <a href="contact.html">
+          <i class="fas fa-phone"></i>
+          <span>contact</span>
+        </a>
+        <a href="education.html">
+          <i class="fas fa-graduation-cap"></i>
+          <span>education</span>
+        </a>
+        <a href="experience.html">
+          <i class="fas fa-signal"></i>
+          <span>experience</span>
+        </a>
+        <a href="setting.html">
+          <i class="fas fa-cog"></i>
+          <span>setting</span>
+        </a>
+        <a href="logout.html">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>logout</span>
+        </a>
+      </div>
+    </div>
+    <!-- main container  -->
+    <section class="dashboard">
+      <div class="overlay"></div>
+      <!-- title and boxes  -->
+
+      <div class="table">
+        <div class="table-header">
+          <p class="heading">Setting Data</p>
+          <div class="">
+            <button class="btn">
+              <i class="fas fa-arrow-left"></i> Go Back
+            </button>
+          </div>
+        </div>
+        <div class="table-content">
+          <form action="" class="form">
+            <div class="two">
+              <div class="group">
+                <label>Home page name</label>
+                <input type="text" name="home_name" />
+              </div>
+              <div class="group">
+                <label>Home Professional name </label>
+                <input type="text" name="professional_name" />
+              </div>
+              <div class="group">
+                <label>Home learning name </label>
+                <input type="text" name="learning_name" />
+              </div>
+            </div>
+            <div class="table-header">
+              <p class="heading">About page Data</p>
+              <div class=""></div>
+            </div>
+            <div class="two">
+              <div class="group">
+                <label>About image</label>
+                <input type="file" name="about_img" />
+              </div>
+              <div class="group">
+                <label>logo image</label>
+                <input type="file" name="logo_img" />
+              </div>
+              <div class="group">
+                <label>favicon icon</label>
+                <input type="file" name="favicon_icon" />
+              </div>
+              <div class="group">
+                <label>display about image</label>
+                <img src="./images/logo2.png" alt="" width="100px" />
+              </div>
+              <div class="group">
+                <label>display logo image</label>
+                <img src="./images/logo2.png" alt="" width="100px" />
+              </div>
+            </div>
+            <div class="group">
+              <label>about description</label>
+              <textarea name="" id=""></textarea>
+            </div>
+
+            <div class="table-header">
+              <p class="heading">Footer Data</p>
+              <div class=""></div>
+            </div>
+            <div class="two">
+              <div class="group">
+                <label> email address</label>
+                <input type="email" name="email_address" />
+              </div>
+              <div class="group">
+                <label>mobile number</label>
+                <input type="number" name="mobile_no" />
+              </div>
+              <div class="group">
+                <label>address</label>
+                <input type="text" name="address" />
+              </div>
+            </div>
+
+            <div class="group">
+              <label>footer about summary</label>
+              <textarea name="footer_summary" class="editor"></textarea>
+            </div>
+          </form>
+        </div>
+        <!-- pagination  -->
+        <div class="pagination">
+          <div class="page">show 1 to 10 of 25</div>
+          <div class="num">
+            <a href=""><</a>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- link js files  -->
+    <script src="js/jquery.js"></script>
+    <script src="js/chart.js"></script>
+
+    <script type="text/javascript" src="js/rte.js"></script>
+    <script type="text/javascript" src="js/all_plugins.js"></script>
+
+    <script src="js/script.js"></script>
+    <script></script>
+  </body>
+</html>

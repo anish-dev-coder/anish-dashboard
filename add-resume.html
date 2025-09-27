@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANISH-DASHBOARD</title>
+    <!-- link css files  -->
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/rte_theme_default.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header>
+      <div class="flex">
+        <div class="fas fa-bars" id="menu"></div>
+        <a href="" class="logo">
+          <img src="images/logo2.png" alt="" />
+        </a>
+      </div>
+
+      <div class="box-container">
+        <div class="fas fa-moon" id="theme"></div>
+        <div class="fas fa-bell" id="bell"></div>
+        <div class="fas fa-envelope" id="mail"></div>
+        <div class="fas fa-user" id="user"></div>
+      </div>
+    </header>
+    <!-- main container  -->
+    <section class="dashboard">
+      <div class="overlay"></div>
+
+      <div class="table">
+        <div class="table-header">
+          <p class="heading">add resume Data</p>
+          <div class="">
+            <button class="btn" onclick="backpage()">
+              <i class="fas fa-arrow-left"></i> Go Back
+            </button>
+          </div>
+        </div>
+        <div class="table-content">
+          <form
+            action=""
+            class="form"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <div class="message"></div>
+            <div class="group">
+              <label>enter file name <span>*</span> </label>
+              <input
+                type="text"
+                name="file_name"
+                placeholder="Enter file name"
+              />
+            </div>
+            <div class="two">
+              <div class="group">
+                <label>resume image <span>*</span></label>
+                <input type="file" name="resume_img" />
+              </div>
+              <div class="group">
+                <label> resume PDF</label>
+                <input type="file" name="pdf_img" />
+              </div>
+              <div class="group">
+                <label>resume WORD</label>
+                <input type="file" name="word_img" />
+              </div>
+            </div>
+
+            <div class="two">
+              <div class="group">
+                <input
+                  type="reset"
+                  class="insertBtn redBtn"
+                  value="reset form"
+                />
+              </div>
+              <div class="group">
+                <input
+                  type="submit"
+                  name="resumeBtn"
+                  class="insertBtn"
+                  value="Insert Data"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script>
+      var editor2 = new RichTextEditor("#project_note");
+    </script>
+  </body>
+</html>

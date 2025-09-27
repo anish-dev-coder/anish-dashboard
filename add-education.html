@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANISH-DASHBOARD</title>
+    <!-- link css files  -->
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/rte_theme_default.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header>
+      <div class="flex">
+        <div class="fas fa-bars" id="menu"></div>
+        <a href="" class="logo">
+          <img src="images/logo2.png" alt="" />
+        </a>
+      </div>
+
+      <div class="box-container">
+        <div class="fas fa-moon" id="theme"></div>
+        <div class="fas fa-bell" id="bell"></div>
+        <div class="fas fa-envelope" id="mail"></div>
+        <div class="fas fa-user" id="user"></div>
+      </div>
+    </header>
+    <!-- sidebar  -->
+    <div class="sidebar">
+      <div class="container">
+        <a href="dashbard.html" class="active">
+          <i class="fas fa-home"></i>
+          <span> Dashboard</span>
+        </a>
+        <a href="category.html">
+          <i class="fas fa-list"></i>
+          <span>category</span>
+        </a>
+
+        <a href="project.html">
+          <i class="fas fa-project-diagram"></i>
+          <span>projects</span>
+        </a>
+        <a href="skill.html">
+          <i class="fas fa-code"></i>
+          <span>skills</span>
+        </a>
+        <a href="user.html">
+          <i class="fas fa-users"></i>
+          <span>users</span>
+        </a>
+        <a href="register.html">
+          <i class="fas fa-address-card"></i>
+          <span>registration</span>
+        </a>
+        <a href="contact.html">
+          <i class="fas fa-phone"></i>
+          <span>contact</span>
+        </a>
+        <a href="education.html">
+          <i class="fas fa-graduation-cap"></i>
+          <span>education</span>
+        </a>
+        <a href="experience.html">
+          <i class="fas fa-signal"></i>
+          <span>experience</span>
+        </a>
+        <a href="setting.html">
+          <i class="fas fa-cog"></i>
+          <span>setting</span>
+        </a>
+        <a href="logout.html">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>logout</span>
+        </a>
+      </div>
+    </div>
+    <!-- main container  -->
+    <section class="dashboard">
+      <div class="overlay"></div>
+      <!-- title and boxes  -->
+
+      <div class="table">
+        <div class="table-header">
+          <p class="heading">Add Education Data</p>
+          <div class="">
+            <button class="btn" onclick="backpage()">
+              <i class="fas fa-arrow-left"></i> Go Back
+            </button>
+          </div>
+        </div>
+        <div class="table-content">
+          <form action="" class="form">
+            <div class="two">
+              <div class="group">
+                <label>class name</label>
+                <input type="text" name="class" />
+              </div>
+              <div class="group">
+                <label> year </label>
+                <input type="number" name="year" />
+              </div>
+            </div>
+            <div class="group">
+              <label>institute name </label>
+              <input type="text" name="institute_name" />
+            </div>
+
+            <div class="group">
+              <label>education description</label>
+              <textarea
+                name="education_summary"
+                id="project_note"
+                class="editor"
+              ></textarea>
+            </div>
+            <div class="two">
+              <div class="group">
+                <input
+                  type="reset"
+                  name="eduBtn"
+                  class="insertBtn redBtn"
+                  value="form resete"
+                />
+              </div>
+              <div class="group">
+                <input
+                  type="submit"
+                  name="eduBtn"
+                  class="insertBtn"
+                  value="Insert Education"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- link js files  -->
+    <script src="js/jquery.js"></script>
+    <script src="js/chart.js"></script>
+
+    <script type="text/javascript" src="js/rte.js"></script>
+    <script type="text/javascript" src="js/all_plugins.js"></script>
+
+    <script src="js/script.js"></script>
+    <script>
+      var editor1 = new RichTextEditor("#project_note");
+    </script>
+  </body>
+</html>
