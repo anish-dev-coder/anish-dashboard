@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ANISH-DASHBOARD</title>
     <!-- link css files  -->
-    <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/rte_theme_default.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/rte_theme_default.css" />
   </head>
   <body>
     <!-- header  -->
     <header>
       <div class="flex">
         <div class="fas fa-bars" id="menu"></div>
-        <a href="" class="logo">
+        <a href="./index.html" class="logo">
           <img src="images/logo2.png" alt="" />
         </a>
       </div>
@@ -27,55 +27,70 @@
       </div>
     </header>
     <!-- sidebar  -->
-    <div class="sidebar">
-      <div class="container">
-        <a href="dashbard.html" class="active">
-          <i class="fas fa-home"></i>
-          <span> Dashboard</span>
-        </a>
-        <a href="category.html">
-          <i class="fas fa-list"></i>
-          <span>category</span>
-        </a>
+  <div class="sidebar">
+    <div class="container">
+      <a href="./index.html" id="dashboard">
+        <i class="fas fa-home"></i>
+        <span> Dashboard</span>
+      </a>
+      <a href="./category.html" id="category">
+        <i class="fas fa-list"></i>
+        <span>category</span>
+      </a>
 
-        <a href="project.html">
-          <i class="fas fa-project-diagram"></i>
-          <span>projects</span>
-        </a>
-        <a href="skill.html">
-          <i class="fas fa-code"></i>
-          <span>skills</span>
-        </a>
-        <a href="user.html">
-          <i class="fas fa-users"></i>
-          <span>users</span>
-        </a>
-        <a href="register.html">
-          <i class="fas fa-address-card"></i>
-          <span>registration</span>
-        </a>
-        <a href="contact.html">
-          <i class="fas fa-phone"></i>
-          <span>contact</span>
-        </a>
-        <a href="education.html">
-          <i class="fas fa-graduation-cap"></i>
-          <span>education</span>
-        </a>
-        <a href="experience.html">
-          <i class="fas fa-signal"></i>
-          <span>experience</span>
-        </a>
-        <a href="setting.html">
-          <i class="fas fa-cog"></i>
-          <span>setting</span>
-        </a>
-        <a href="logout.html">
-          <i class="fas fa-sign-out-alt"></i>
-          <span>logout</span>
-        </a>
+      <a href="./project.html" id="project">
+        <i class="fas fa-project-diagram"></i>
+        <span>projects</span>
+      </a>
+      <a href="./skill.html" id="skill">
+        <i class="fas fa-microchip"></i>
+        <span>skills</span>
+      </a>
+      <a href="./user.html" id="users">
+        <i class="fas fa-users"></i>
+        <span>users</span>
+      </a>
+      <a href="./register.html" id="register">
+        <i class="fas fa-address-card"></i>
+        <span>registration</span>
+      </a>
+      <a href="./contact.html" id="contact">
+        <i class="fas fa-phone"></i>
+        <span>contact</span>
+      </a>
+      <a href="./education.html" id="education" class="active">
+        <i class="fas fa-graduation-cap"></i>
+        <span>education</span>
+      </a>
+      <a href="./experience.html" id="experience">
+        <i class="fas fa-signal"></i>
+        <span>experience</span>
+      </a>
+      <a href="./source_code.html" id="code">
+        <i class="fas fa-code"></i>
+        <span>source code</span>
+      </a>
+      <a href="./resume.html" id="resume">
+        <i class="fas fa-newspaper"></i>
+        <span>Resume</span>
+      </a>
+      <a href="./setting.html" id="setting">
+        <i class="fas fa-cog"></i>
+        <span>setting</span>
+      </a>
+      <a href="./logout.html" id="logout">
+        <i class="fas fa-sign-out-alt"></i>
+        <span>logout</span>
+      </a>
+      <div class="buttons">
+        <div class="color" style="background: #1d87da"></div>
+        <div class="color" style="background: #2bb82a"></div>
+        <div class="color" style="background: #690daf"></div>
+        <div class="color" style="background: #d37200"></div>
+        <div class="color" style="background: #5107f8"></div>
       </div>
     </div>
+  </div>
     <!-- main container  -->
     <section class="dashboard">
       <div class="overlay"></div>
@@ -86,7 +101,7 @@
           <p class="heading">Education Data</p>
           <div class="">
             <input type="search" placeholder="search here" class="search" />
-            <a href="add-education.html" class="btn"
+            <a href="./add-education.html" class="btn"
               ><i class="fas fa-add"></i> Add New</a
             >
           </div>
@@ -113,10 +128,10 @@
                 <td>cvckvmvcxvcvxnnv</td>
                 <td>cvckvmvcgdfdxvcvxnnv</td>
                 <td>
-                  <a href="" class="action-btn edit">
+                  <a href="./" class="action-btn edit">
                     <i class="fas fa-pen"></i>
                   </a>
-                  <a href="" class="action-btn delete">
+                  <a href="./" class="action-btn delete">
                     <i class="fas fa-trash"></i>
                   </a>
                 </td>
@@ -128,11 +143,11 @@
         <div class="pagination">
           <div class="page">show 1 to 10 of 25</div>
           <div class="num">
-            <a href=""><</a>
-            <a href="">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
-            <a href="">></a>
+            <a href="./"><</a>
+            <a href="./">1</a>
+            <a href="./">2</a>
+            <a href="./">3</a>
+            <a href="./">></a>
           </div>
         </div>
       </div>
